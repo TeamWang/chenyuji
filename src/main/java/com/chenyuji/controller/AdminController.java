@@ -24,7 +24,7 @@ public class AdminController {
 	@RequestMapping("/login")
 	@ResponseBody
 	public Map<String,Object> login(HttpServletRequest request) {
-		System.out.println("1");
+		System.out.println("11");
 		Map<String,Object> map = new HashMap<String,Object>();
 		String loginId = request.getParameter("login_id");
 		Admin admin = adminService.selectByPrimaryKey(loginId);
